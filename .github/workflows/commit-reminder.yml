@@ -40,4 +40,4 @@ jobs:
           SENDER_APP_PASSWORD: ${{ secrets.SENDER_APP_PASSWORD }}
           FORCE_SEND: ${{ github.event.inputs.force_send }}
         run: |
-          python scripts/github_activity_emailer.py
+          python scripts/commit_reminder.py
